@@ -1,0 +1,30 @@
+{
+  "name": "cypresstypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run:stage": "npx cypress run --config-file cypress-stage.config.ts",
+    "cy:run:local": "npx cypress run --config-file cypress-local.config.ts",
+    "cy:run:prod": "npx cypress run --config-file cypress-prod.config.ts",
+    "cy:open:stage": "npx cypress open --config-file cypress-stage.config.ts",
+    "cy:open:local": "npx cypress open --config-file cypress-local.config.ts",
+    "cy:open:prod": "npx cypress open --config-file cypress-prod.config.ts",
+    "cy:run:stage:site1": "npx cypress run --config-file cypress-stage.config.ts --spec cypress/e2e/tests/site1/*.cy.ts",
+    "cy:run:local:site1": "npx cypress run --config-file cypress-local.config.ts --spec cypress/e2e/tests/site1/*.cy.ts",
+    "cy:run:prod:site1": "npx cypress run --config-file cypress-prod.config.ts --spec cypress/e2e/tests/site1/*.cy.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.2.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "eslint-plugin-cypress": "^2.12.1",
+    "mochawesome": "^7.1.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": "latest"
+    },
+  
+    "globals": {
+      "string": true
+    },
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+  
+    "rules": {
+      "cypress/no-async-tests": 0
+    },
+  
+    "extends": ["eslint:recommended", "plugin:cypress/recommended"]
+  }
+  

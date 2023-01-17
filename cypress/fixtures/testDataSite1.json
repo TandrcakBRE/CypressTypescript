@@ -1,0 +1,10 @@
+{
+  "dropDownOption1": "Option1",
+  "dropDownOption2": "Option2",
+  "dropDownOption3": "Option3",
+  "country1": "Brazil",
+  "alertExpectedText": "Hello , share this practice page and share your knowledge",
+  "confirmExpectedText": "Hello , Are you sure you want to confirm?",
+  "courseName": "Advanced Selenium Framework Pageobject",
+  "courseExpectedPrice": "20"
+}
