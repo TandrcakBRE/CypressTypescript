@@ -13,6 +13,6 @@ describe('Practice test suite', function () {
     //window:alert
     //pages.firstPageSite1.alertButton().click();
 
-    //window.confirm da da da
+    //window.confirm
   });
 });
