@@ -4,9 +4,11 @@ cypress/report/*
 cypress/screenshots/*
 cypress/videos/*
 cypress/downloads/*
+cypress/e2e/tests/practice/*
 
 # Ignore node_modules folder
 node_modules
 
 ### Environment files ignore ###
 *.env.json
+cypress/e2e/tests/practice.cy.ts
