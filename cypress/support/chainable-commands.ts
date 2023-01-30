@@ -1,5 +1,6 @@
 import './commands/commands';
 import './commands/firstPageSite1-commands';
+import './commands/loginPageSite2-commands';
 
 declare global {
   namespace Cypress {
@@ -21,6 +22,14 @@ declare global {
         courseName: string,
         courseExpectedPrice: string,
       ): Chainable;
+
+      /**
+       * Custom command to select country from dynamic ddl
+       * @param username = username
+       * @param password = userPassword
+       * @example cy.dynamicDdl("countryName")
+       */
+      login(username: string, password: string): Chainable;
     }
   }
 }

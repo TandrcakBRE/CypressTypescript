@@ -31,6 +31,6 @@ export default defineConfig({
   },
   env: {
     pathSite1: '/AutomationPractice/',
-    pathSite2: '/client/auth/login',
+    pathSite2: '/client/',
   },
 });
