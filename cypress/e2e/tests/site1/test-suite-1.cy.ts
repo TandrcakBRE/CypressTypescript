@@ -11,6 +11,7 @@ describe('Test Suite 1', function () {
     });
   });
 
+  //Test covers clicking on radio buttons and verifying that they are checked
   it('Radio button example', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     pages.firstPageSite1.radioButton1().click().should('be.checked');
@@ -18,6 +19,7 @@ describe('Test Suite 1', function () {
     pages.firstPageSite1.radioButton3().click().should('be.checked');
   });
 
+  //Test covers handling dynamic ddl
   it('Suggestion class example (dynamic ddl)', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     pages.firstPageSite1.autocompleteField().type(this.data.country1);
@@ -27,6 +29,7 @@ describe('Test Suite 1', function () {
       .should('have.value', this.data.country1);
   });
 
+  //Test covers handling static ddl, selecting different options
   it('Dropdown example (static ddl)', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     pages.firstPageSite1.staticDdl().select(this.data.dropDownOption1);
@@ -34,6 +37,7 @@ describe('Test Suite 1', function () {
     pages.firstPageSite1.staticDdl().select(this.data.dropDownOption3);
   });
 
+  //Test covers handling checkboxes, checking, unchecking, verifying...
   it('Checkbox example', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     pages.firstPageSite1.allCheckboxes().check().should('be.checked');

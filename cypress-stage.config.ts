@@ -32,5 +32,6 @@ export default defineConfig({
   env: {
     pathSite1: '/AutomationPractice/',
     pathSite2: '/client/',
+    site2apiLogin: '/api/ecom/auth/login',
   },
 });

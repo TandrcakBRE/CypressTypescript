@@ -1,4 +1,11 @@
 {
   "missingPasswordMessage": "Password is required",
-  "missingEmailMessage": "Email is required"
+  "missingEmailMessage": "Email is required",
+  "addidasShoe": "adidas original",
+  "creditCardNumber": "1111 1111 1111 1111",
+  "creditCardMonth": "05",
+  "creditCardYear": "23",
+  "cvvCode": "111",
+  "creditCardName": "Random Name",
+  "creditCardCountry": "Brazil"
 }

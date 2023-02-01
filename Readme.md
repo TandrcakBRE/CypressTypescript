@@ -3,6 +3,11 @@
 ### Set up project
 
 - After cloning project open terminal in Visual Studio Code in project folder and run this command:"npm install". This will install all node modules and dependencies from package.json file.
+- When all modules are installed create Cypress.env.json file and place it next to config.ts files in your project. This file is added in .gitignore and it should contain your personal username and password, because of that it should not be pushed to git. File example is below, just add your username and password in "".
+  {
+  "userEmail": "",
+  "userPassword": ""
+  }
 
 - There are 2 ways to run cypress tests, in open and run mode.
 - To run cypress in open mode run this command in terminal: "npm run cy:open:stage". This will open cypress runner which will allow you to manualy run specific files, good thing for debugging or when creating new test cases.

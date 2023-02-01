@@ -13,3 +13,22 @@ Cypress.Commands.add('login', (username, password) => {
     cy.url().should('include', '/dashboard/dash');
   });
 });
+
+Cypress.Commands.add('loginApi', (username, password) => {
+  cy.session([username, password], () => {
+    cy.request('POST', '/' + Cypress.env('site2apiLogin'), {
+      userEmail: username,
+      userPassword: password,
+    }).then(function (response) {
+      expect(response.status).to.eq(200);
+      Cypress.env('token', response.body.token);
+      cy.log(Cypress.env('token'));
+      cy.visit('/' + Cypress.env('pathSite2'), {
+        onBeforeLoad: function (window) {
+          window.localStorage.setItem('token', Cypress.env('token'));
+        },
+      });
+      cy.url().should('include', '/dashboard/dash');
+    });
+  });
+});

@@ -24,12 +24,20 @@ declare global {
       ): Chainable;
 
       /**
-       * Custom command to select country from dynamic ddl
+       * Custom command to login with UI
        * @param username = username
        * @param password = userPassword
-       * @example cy.dynamicDdl("countryName")
+       * @example cy.login("username","password")
        */
       login(username: string, password: string): Chainable;
+
+      /**
+       * Custom command to login with API
+       * @param username = username
+       * @param password = userPassword
+       * @example cy.loginApi("username","password")
+       */
+      loginApi(username: string, password: string): Chainable;
     }
   }
 }
