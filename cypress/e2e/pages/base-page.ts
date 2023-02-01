@@ -4,6 +4,8 @@ import LoginPageSite2 from './site2/login-page-site2';
 import HomePageSite2 from './site2/home-page-site2';
 import OrdersPageSite2 from './site2/orders-page-site2';
 import CartPageSite2 from './site2/cart-page-site2';
+import PaymentPageSite2 from './site2/payment-page-site2';
+import FinalPageSite2 from './site2/final-page-site2';
 
 class BasePage {
   firstPageSite1 = new FirstPageSite1();
@@ -11,5 +13,7 @@ class BasePage {
   homePageSite2 = new HomePageSite2();
   ordersPageSite2 = new OrdersPageSite2();
   cartPageSite2 = new CartPageSite2();
+  paymentPageSite2 = new PaymentPageSite2();
+  finalPageSite2 = new FinalPageSite2();
 }
 export default BasePage;

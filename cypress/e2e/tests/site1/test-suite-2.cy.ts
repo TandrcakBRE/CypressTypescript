@@ -11,6 +11,7 @@ describe('Test Suite 2', function () {
     });
   });
 
+  //Test covers handling hide/show field and verifications if field is hidden or displayed
   it('Hide/show field example', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     pages.firstPageSite1.hideButton().click();
@@ -19,6 +20,7 @@ describe('Test Suite 2', function () {
     pages.firstPageSite1.textBoxField().should('be.visible');
   });
 
+  //Test covers handling alert and confirm popup and verifying text in them
   it('Popups example', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     //window:alert
@@ -33,7 +35,7 @@ describe('Test Suite 2', function () {
     });
   });
 
-  //web table
+  //Test covers handling web table and verifying value in it
   it('Web table example', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     cy.coursePriceVerification(
@@ -42,6 +44,7 @@ describe('Test Suite 2', function () {
     );
   });
 
+  //Test covers mouse hover event
   it('Mouse hover example', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     pages.firstPageSite1.mouseHoverTop().click({ force: true });

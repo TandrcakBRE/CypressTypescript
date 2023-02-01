@@ -11,7 +11,7 @@ export default defineConfig({
     trashAssetsBeforeRuns: true,
     watchForFileChanges: false,
     retries: {
-      runMode: 2,
+      runMode: 1,
       openMode: 0,
     },
 
@@ -31,5 +31,7 @@ export default defineConfig({
   },
   env: {
     pathSite1: '/AutomationPractice/',
+    pathSite2: '/client/',
+    site2apiLogin: '/api/ecom/auth/login',
   },
 });

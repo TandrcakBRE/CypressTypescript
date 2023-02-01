@@ -10,6 +10,8 @@ describe('Test suite 3', function () {
       this.data = data;
     });
   });
+
+  //This is test with error used for example in reports
   it('Test with error example', function () {
     cy.visit('/' + Cypress.env('pathSite1'));
     cy.get('blabla').click();
