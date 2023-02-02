@@ -3,7 +3,7 @@
 ### Set up project
 
 - After cloning project open terminal in Visual Studio Code in project folder and run this command:"npm install". This will install all node modules and dependencies from package.json file.
-- When all modules are installed create Cypress.env.json file and place it next to config.ts files in your project. This file is added in .gitignore and it should contain your personal username and password, because of that it should not be pushed to git. File example is below, just add your username and password in "".
+- When all modules are installed create Cypress.env.json file and place it next to config.ts files in your project. This file is added in .gitignore and it should contain your personal username and password, because of that it should not be pushed to git. File example is below, just add your username and password in "". Because this is dummy app you can use my credentials for executing tests "userEmail": "darko.petrovic@seavus.com", "userPassword": "Test1234", or you can create your own dummy account.
   {
   "userEmail": "",
   "userPassword": ""
