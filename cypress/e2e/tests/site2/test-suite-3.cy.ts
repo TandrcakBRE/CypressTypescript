@@ -4,7 +4,7 @@ import BasePage from '../../pages/base-page';
 
 const pages = new BasePage();
 
-describe('Practice test suite', function () {
+describe('Test Suite 3', function () {
   beforeEach(function () {
     cy.fixture('testDataSite2').then(function (data) {
       this.data = data;
